@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurfTime - Book Your Sports Ground Online</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #4ade80 0%, #16a34a 100%);
+        }
+        .custom-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="bi bi-calendar-check text-green-600 text-3xl"></i>
+                <span class="text-2xl font-bold text-gray-800">TurfTime</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-600 hover:text-green-600">Home</a>
+                <a href="#" class="text-gray-600 hover:text-green-600">Book Now</a>
+                <a href="#" class="text-gray-600 hover:text-green-600">Facilities</a>
+                <a href="#" class="text-gray-600 hover:text-green-600">Contact</a>
+            </div>
+            <div class="flex space-x-4">
+                <button class="px-4 py-2 text-green-600 hover:text-green-700">Login</button>
+                <button class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="gradient-bg py-20">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-1/2 text-white">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-6">Book Your Perfect Turf Instantly</h1>
+                        <p class="text-lg mb-8">Find and reserve sports grounds near you with just a few clicks.</p>
+                        <div class="flex space-x-4">
+                            <button class="px-6 py-3 bg-white text-green-600 rounded-lg hover:bg-gray-100">
+                                Book Now
+                            </button>
+                            <button class="px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white hover:text-green-600">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 mt-10 md:mt-0">
+                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_xevqz3vy.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Why Choose TurfTime?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 text-center">
+                        <i class="bi bi-clock text-4xl text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Instant Booking</h3>
+                        <p class="text-gray-600">Book your preferred slot in real-time with immediate confirmation</p>
+                    </div>
+                    <div class="p-6 text-center">
+                        <i class="bi bi-geo-alt text-4xl text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Location Based</h3>
+                        <p class="text-gray-600">Find the nearest turfs and sports facilities around you</p>
+                    </div>
+                    <div class="p-6 text-center">
+                        <i class="bi bi-shield-check text-4xl text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Secure Payments</h3>
+                        <p class="text-gray-600">Safe and secure payment gateway for hassle-free transactions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-8">Find Your Perfect Turf</h2>
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Location</label>
+                                <input type="text" placeholder="Enter location" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Date</label>
+                                <input type="date" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Sport Type</label>
+                                <select class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-600">
+                                    <option>Football</option>
+                                    <option>Cricket</option>
+                                    <option>Basketball</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="w-full mt-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700">
+                            Search Available Turfs
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">TurfTime</h3>
+                    <p class="text-gray-400">Book your perfect sports ground anytime, anywhere.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Sports</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Football</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Cricket</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Basketball</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 TurfTime. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
